@@ -553,8 +553,8 @@ export class Image {
    * Set the image buffer.
    * (e.g: for copy data from another png);
    */
-  setBuffer(buf: Uint8Array): void {
-    this.buffer = buf;
+  setBuffer(buf: ArrayBufferLike): void {
+    this.buffer.buffer = buf;
   }
 
   /*
