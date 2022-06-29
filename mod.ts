@@ -7,4 +7,5 @@
  */
 
 export { Image, RGB } from './lib/Image.ts'
+export type { RGB } from "./lib/Image.ts";
 export { PNGImage } from './lib/PNGImage.ts'
