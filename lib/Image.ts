@@ -549,6 +549,14 @@ export class Image {
     return new Uint8Array(this.buffer.buffer);
   }
 
+  /**
+   * Set the image buffer.
+   * (e.g: for copy data from another png);
+   */
+  setBuffer(buf: Uint8Array): void {
+    this.buffer = buf;
+  }
+
   /*
   *
   * Get the base64 encoded image string
